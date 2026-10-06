@@ -1,0 +1,13 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnAddinLoad">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="wraTab" label="参考文献助手">
+        <group id="wraComments" label="文献批注 v0.1.2 · 先选中文献列表">
+          <button id="wraGenerate" label="生成文献批注" size="large" imageMso="ReviewNewComment" onAction="OnGenerateComments" screentip="选中文献列表后运行" supertip="从第一条 [1] 到最后一条文献末尾选中全部内容。支持 [12]、[23,26]、[27-29]、[38,42-44]，每组一条批注，上标保持原样。"/>
+          <button id="wraRefresh" label="刷新文献批注" size="large" imageMso="RefreshAll" onAction="OnRefreshComments" screentip="重新选中文献列表后刷新" supertip="先读取、校验当前文献列表，再生成新批注并清理旧批注。保留其他人的批注。"/>
+          <button id="wraClear" label="清除文献批注" size="large" imageMso="ReviewDeleteComment" onAction="OnClearComments" screentip="只清除本插件生成的批注" supertip="不需要选择文献区域。不会删除导师或用户自己的批注。"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

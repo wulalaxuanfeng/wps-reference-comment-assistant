@@ -1,0 +1,17 @@
+{
+  "name": "WpsReferenceAssistant",
+  "version": "0.1.2",
+  "private": true,
+  "description": "WPS 参考文献批注助手：手动选择文献区域，只操作插件生成的批注",
+  "addonType": "wps",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build": "node scripts/build.cjs",
+    "serve": "node scripts/server.cjs",
+    "debug": "wpsjs debug --port 38991"
+  },
+  "devDependencies": {
+    "wpsjs": "2.2.3",
+    "wps-jsapi-declare": "latest"
+  }
+}

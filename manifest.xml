@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JsPlugin>
+  <ApiVersion>1.0.0</ApiVersion>
+  <Name>WpsReferenceAssistant</Name>
+  <Description>手动选择参考文献列表，为正文引用生成批注</Description>
+</JsPlugin>
